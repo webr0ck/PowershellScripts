@@ -1,9 +1,3 @@
-function Log([string]$logline){ 
-    $time = (Get-Date -f o)
-    $logline = "[" + $time + "] - " + $logline
-    Write-host $logline
-}
-
 Function psrunas{
       [Cmdletbinding()] 
     Param( 
